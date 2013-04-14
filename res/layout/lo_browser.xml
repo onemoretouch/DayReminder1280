@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/rlBrowser"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@color/gray3"
+>
+	<LinearLayout android:id="@+id/bottom_btn_bar"                         
+	         android:orientation="horizontal"                                
+	         android:gravity="bottom" 
+	         android:layout_alignParentBottom="true"  
+	         style="@style/BottomButtonBar"> 
+	                                         
+	     <Button android:id="@+id/btnCancel" 
+	             android:text="@string/button_cancel" 
+	             style="@style/LeftBottomButton"/> 
+	                                 
+	     <Button android:id="@+id/btnOK" 
+	             style="@style/RightBottomButton" 
+	             android:text="@string/button_ok"/> 
+	 
+	 </LinearLayout>
+   	
+	<ListView
+		android:id="@+id/lvFileList"
+		android:layout_width="fill_parent"
+		android:layout_marginLeft="10dip"
+		android:layout_height="fill_parent"
+		android:choiceMode="singleChoice"
+		android:background="@color/gray3"
+		android:cacheColorHint="#00000000"
+		android:layout_toRightOf="@+id/lvCatalog"
+		android:layout_above="@+id/bottom_btn_bar"
+	>
+	</ListView>
+	<ImageView
+		android:layout_width="72dip"
+		android:layout_height="fill_parent"
+		android:background="@drawable/bgbc"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_above="@+id/bottom_btn_bar"
+	>
+	</ImageView>
+	<ListView
+		android:id="@+id/lvCatalog"
+		android:layout_width="72dip"
+		android:layout_height="fill_parent"
+		android:choiceMode="singleChoice"
+		android:cacheColorHint="#00000000"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_above="@+id/bottom_btn_bar"
+	>
+	</ListView>
+</RelativeLayout>

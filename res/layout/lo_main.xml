@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/bg_maintitle"
+        android:gravity="center_horizontal|top"
+        android:paddingTop="4dip"
+        android:text="@string/title_main"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTitle1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|bottom"
+        android:text="@string/title_main"
+        android:textColor="@color/tvc"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+    <!--
+    <Button
+        android:id="@+id/btnFunc"
+        android:layout_width="fill_parent"
+        android:layout_height="27dip"
+        android:layout_below="@+id/tvTitle"
+        android:background="@drawable/bg_maintitle2" />
+    -->
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tvTitle"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rlTmp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/btnTmp"
+                android:layout_width="fill_parent"
+                android:layout_height="41dip"
+                android:background="@drawable/btn_sdallow_closed" />
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/btnTmp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="bottom|center_horizontal" >
+
+                <ListView
+                    android:id="@+id/lvDrInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="0dip"
+                    android:layout_above="@+id/llBottom"
+                    android:cacheColorHint="#00000000"
+                    android:choiceMode="singleChoice"
+                    android:dividerHeight="0dip"
+                    android:paddingLeft="16dip"
+                    android:paddingRight="0dip"
+                    android:paddingTop="2dip" />
+                
+                <LinearLayout
+                    android:id="@+id/llBottom"
+                    style="@style/BottomButtonBar"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:clickable="true"
+                    android:gravity="bottom|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnSedAll"
+                        style="@style/LeftBottomButton"
+                        android:text="@string/button_sedall" />
+
+                    <Button
+                        android:id="@+id/btnDel"
+                        style="@style/RightBottomButton"
+                        android:text="@string/button_delete" />
+                </LinearLayout>
+                
+            </FrameLayout>
+            
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:panel="http://schemas.android.com/apk/res/com.doeasy.DayReminder"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.doeasy.DayReminder.UserControl.Panel
+                android:id="@+id/pnFunc"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                panel:animationDuration="400"
+                panel:closedHandle="@drawable/btn_sdallow_closed"
+                panel:closingHandle="@drawable/btn_sdallow_closing"
+                panel:openedHandle="@drawable/btn_sdallow_opened"
+                panel:openingHandle="@drawable/btn_sdallow_opening"
+                panel:position="top" >
+
+                <Button
+                    android:id="@id/panelHandle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip" />
+
+                <LinearLayout
+                    android:id="@id/panelContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="132dip"
+                    android:background="@drawable/bg_sd"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/llBottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dip"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="4dip"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/btnAll"
+                            style="@style/GroupButton"
+                            android:text="@string/button_all" />
+
+                        <Button
+                            android:id="@+id/btnBir"
+                            style="@style/GroupButton"
+                            android:text="@string/button_bd" />
+
+                        <Button
+                            android:id="@+id/btnMem"
+                            style="@style/GroupButton"
+                            android:text="@string/button_md" />
+
+                        <Button
+                            android:id="@+id/btnHol"
+                            style="@style/GroupButton"
+                            android:text="@string/button_hd" />
+
+                        <Button
+                            android:id="@+id/btnCal"
+                            style="@style/GroupButton"
+                            android:text="@string/button_cal" />
+                    </LinearLayout>
+
+                    <SeekBar
+                        android:id="@+id/sbMonth"
+                        android:layout_width="fill_parent"
+                        android:layout_height="32dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/bg_seekbar"
+                        android:max="11"
+                        android:paddingLeft="6dip"
+                        android:paddingRight="6dip"
+                        android:progress="11"
+                        android:progressDrawable="@drawable/pd_seekbar"
+                        android:radius="32dip"
+                        android:thumb="@drawable/thumb" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="5dip"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/etKey"
+                            android:layout_width="200dip"
+                            android:layout_height="31dip"
+                            android:layout_marginLeft="8dip"
+                            android:textSize="14sp"
+                            android:background="@drawable/bg_searchedittext"
+                            android:hint="@string/hint_search"
+                            android:paddingLeft="32dip" />
+
+                        <Button
+                            android:id="@+id/btnSearch"
+                            android:layout_width="60dip"
+                            android:layout_height="40dip"
+                            android:layout_marginLeft="8dip"
+                            android:layout_marginRight="8dip"
+                            android:text="@string/button_search" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.doeasy.DayReminder.UserControl.Panel>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

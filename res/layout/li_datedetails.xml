@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/itemdate"
+	android:layout_width="fill_parent"
+	android:layout_height="48dip"
+	android:background="@drawable/xml_bg_cont1"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	>
+	<TextView
+		android:id="@+id/tvTitle"
+		android:layout_width="96dip"
+		android:layout_height="48dip"
+		android:text="今年农历"
+		android:textColor="@color/black"
+		android:textSize="16sp"
+		android:layout_gravity="center_horizontal|center_vertical"
+	   	android:gravity="center_vertical|center_horizontal"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+	/>
+	<TextView
+		android:id="@+id/tvDate"
+		android:layout_width="fill_parent"
+		android:layout_height="48dip"
+		android:text="2011年9月30日 星期一"
+		android:layout_gravity="left|center_vertical"
+	   	android:gravity="center_vertical|left"
+		android:layout_alignParentTop="true"
+		android:layout_toRightOf="@+id/tvTitle"
+		android:textColor="@color/black"
+		android:textSize="16sp"
+	/>
+</RelativeLayout>

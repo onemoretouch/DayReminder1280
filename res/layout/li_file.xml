@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/itemfile"
+	android:layout_width="fill_parent"
+	android:layout_height="32dip"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_gravity="center_vertical"
+	android:gravity="center_vertical"
+	android:paddingLeft="5dip"
+	android:background="@drawable/xml_bg_listitem"
+	>
+	<RadioButton
+		android:id="@+id/rbSed"
+		android:layout_width="32dip"
+		android:layout_height="32dip"
+		android:text=""
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		style="@style/CheckBoxCheck"
+	>
+	</RadioButton>
+	<TextView
+		android:id="@+id/tvFName"
+		android:layout_width="fill_parent"
+		android:layout_height="32dip"
+		android:layout_gravity="left|center_vertical"
+	   	android:gravity="center_vertical|left"
+	   	android:paddingLeft="1dip"
+	   	android:paddingRight="32dip"
+		android:layout_toRightOf="@+id/ivIcon"
+		android:textSize="13sp"
+		android:textColor="@color/tvc"
+	/>
+	<ImageView
+		android:id="@+id/ivIcon"
+		android:layout_width="32dip"
+		android:layout_height="32dip"
+		android:layout_alignParentLeft="true"
+		android:layout_gravity="center_horizontal|center_vertical"
+		android:gravity="center_horizontal|center_vertical"
+	/>
+</RelativeLayout>

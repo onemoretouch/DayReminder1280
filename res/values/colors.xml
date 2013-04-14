@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="text">#000000</color>
+	<color name="wcbgcolor">#E3D091</color>
+	<color name="sysbg">#1F2B2F</color>
+	<color name="syssetbg">#EFEFEF</color>
+	<color name="libackgroud">#EFEFEF</color>
+	<color name="drabout2">#EBE9ED</color>
+	<color name="red">#fd8d8d</color>
+	<color name="green">#9cfda3</color>
+	<color name="blue">#8d9dfd</color>
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="gray">#282828</color>
+	<color name="gray1">#949494</color>
+	<color name="gray2">#EAEAEA</color>
+	<color name="gray3">#FAFAFA</color>
+	<color name="tvc">#454545</color>
+	<color name="drn">#646464</color>
+	<color name="cm">#848284</color>
+	<color name="cmed">#212421</color>
+	<color name="cd">#333333</color>
+	<color name="ct1">#FF6600</color>
+	<color name="ct2">#993300</color>
+	<color name="ct3">#0066FF</color>
+	<color name="mlt1">#FF0000</color>
+	<color name="mlt2">#880000</color>
+	<color name="mlt3">#783D3D</color>
+	<color name="mlt4">#6D5900</color>
+	<color name="transparent">#5000</color>
+	
+</resources>

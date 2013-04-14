@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">生日提醒</string>
+    <string name="appwidget41">生日提醒4×1</string>
+    <string name="appwidget42">生日提醒4×2</string>
+    <string name="title_Login">用户登录</string>
+    <string name="cr">成都多易科技有限公司\r\n\r\n荣誉出品</string>
+    <string name="load">载入...</string>
+    
+    <string name="tvOn">开启</string>
+    <string name="tvOff">关闭</string>
+    
+    <string name="menu_bdadd">添加生日</string>
+    <string name="menu_mdadd">添加纪念日</string>
+    <string name="menu_hdadd">节日</string>
+    <string name="menu_calendar">日历</string>
+    <string name="calendar_spec">特别提醒</string>
+    <string name="menu_set">设置</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_exit">退出</string>
+    <string name="menu_edit">修改</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_save">保存</string>
+    <string name="dialog_delete_message">确认删除此提醒信息吗？</string>
+    <string name="dialog_deletesed_message">确认删除选中的提醒信息吗？</string>
+    <string name="dialog_cancelupdate_message">提醒信息有更新，是否取消？</string>
+    <string name="dialog_setremindtime_message">确认将所有提醒统一设置为指定时间？</string>
+    <string name="dialog_exit_message">确认退出本系统？</string>
+    <string name="dialog_restore_message">恢复数据成功！\r\n立即重新启动该软件。</string>
+    
+    <string name="button_all">全部</string>
+    <string name="button_bd">生日</string>
+    <string name="button_md">纪念日</string>
+    <string name="button_hd">节日</string>
+    <string name="button_cal">日历</string>
+    <string name="button_back">返回</string>  
+    <string name="button_edit">编辑</string>
+    <string name="button_delete">删除</string>
+    <string name="button_sedall">全选</string>
+    <string name="button_nosedall">全不选</string>
+    <string name="button_ok">确定</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_save">保存</string>
+    <string name="button_search">搜索</string>
+    <string name="button_tel">电话</string>
+    <string name="button_ems">短信</string>
+    <string name="button_know">知道啦</string>
+    <string name="hint_search">关键字</string>
+    <string name="title_login">密码保护</string>
+    <string name="title_main">生日提醒</string>
+    <string name="title_drinfo">提醒详情</string>
+    <string name="title_dredit">编辑提醒</string>
+    <string name="title_dayedit">编辑日期</string>
+    <string name="title_timedialog">提醒时间</string>
+    <string name="title_datedetails">日期详情</string>
+    <string name="title_setting">设置</string>
+    <string name="schCName">搜索联系人</string>
+    <string name="alarmTitle">生日提醒</string>
+    <string name="drVersion">2.2.0</string>
+    <string name="drCopy">版权声明</string>
+    <string name="drDesp"></string>
+    
+    <string name="txt_EditDay">编辑日期</string>
+    <string name="txt_Year">年</string>
+    <string name="txt_Month">月</string>
+    <string name="txt_Day">日</string>
+    
+	<string name="txt_Contacts">电话簿</string>
+    <string name="txt_BdName">姓　　名</string>
+    <string name="txt_MdName">名　　称</string>
+    <string name="txt_BdDay">生　　日　</string>
+    <string name="txt_MdDay">日　　期　</string>
+    <string name="txt_HdDay">描　　述</string>
+    <string name="txt_Phone">电　　话</string>
+    <string name="txt_Sms">短信内容</string>
+    <string name="txt_Remark">备　　注</string>
+    <string name="txt_RmDateType">提醒日期　</string>
+    <string name="txt_Solar">公历</string>
+    <string name="txt_Lunar">农历</string>
+    <string name="txt_LunarLeap">闰月</string>
+    <string name="txt_NextDate">临近日期　</string>
+    <string name="txt_RemindType">提醒方式　</string>
+    <string name="txt_Alarm">闹铃</string>
+    <string name="txt_Notify">消息</string>
+    <string name="txt_DateDetails">生日详情</string>
+    <string name="txt_AfDays">提醒日期　</string>
+    <string name="txt_ApDays">开显日期　</string>
+    <string name="txt_RemindTime">提醒时间　</string>
+    <string name="txt_IsAppWidget">插件显示</string>
+    <string name="txt_IsAutoSMS">自发短信</string>
+   <string name="txt_SMSText">短信内容</string>
+   <string name="txt_RemarkText">备注内容</string>
+   <string name="txt_Backuping">正在备份……</string>
+   
+    <string name="ss_pwdProtect">密码保护</string>
+    <string name="ss_SetPwd">设置密码</string>
+    <string name="ss_Pwd1">密　　码</string>
+    <string name="ss_Pwd2">确认密码</string>
+    <string name="ss_ErrPwdDesp">两次密码不一致！</string>
+    <string name="ss_IsRemind">定时提醒</string>
+    <string name="ss_IsNotify">消息通知</string>
+    <string name="ss_IsAlarm">提醒闹铃</string>
+    <string name="ss_IsVibrate">是否震动</string>
+    <string name="ss_IsBell">是否响铃</string>
+    <string name="ss_Bell">铃　　声</string>
+    <string name="ss_IsAutoSMS">自发短信</string>
+    <string name="ss_AfDays">提醒日期</string>
+     <string name="ss_ApDays">开显日期</string>
+     <string name="ss_IsAppWidget">插件显示</string>
+    <string name="ss_RemindTime">提醒时间</string>
+    <string name="ss_UpdateRemind">更新提醒</string>
+    <string name="ss_UpdateRemindDesp">提醒时间统一设置为指定时间</string>
+    <string name="ss_Backup">备　　份</string>
+    <string name="ss_Restore">恢　　复</string>
+    <string name="ss_RestoreDesp">从备份文件中恢复数据</string>
+    <string name="ss_RestoreForM8">恢　　复</string>
+    <string name="ss_RestoreForM8Desp">从M8的备份文件中恢复数据</string>
+	<string name="err_search_null">请输入搜索关键字</string>
+	
+	<string name="err_dateformart">日期格式输入有错</string>
+	<string name="err_date_future">生日不能超过当前时间</string>
+	<string name="err_save">生日不能超过当前时间</string>
+	<string name="err_operate">非法操作</string>
+	<string name="err_telphone">非法操作</string>
+	<string name="lrerr_nolicense">无对应license，请到魅族软件中心下载</string>
+	<string name="lrerr_invalidlicense">license无效，请到魅族软件中心下载</string>
+	<string name="lrerr_triallicense">此为试用版，请到魅族软件中心购买正式版</string>
+	
+	<string name="suc_save">保存成功</string>
+	
+	<string name="button_Rotate">旋转</string>
+    <string name="button_Enlarge">放大</string>
+    <string name="button_Narrow">缩小</string>
+    
+    <string name="mnu_SelectFile">选择文件</string>
+    <string name="mnu_TakePhoto">拍照</string>
+    <string name="mnu_Cancel">取消</string>
+    <string name="title_SetAvatar">设置头像</string>
+    
+</resources>

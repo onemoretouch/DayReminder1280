@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/gray3"
+              android:orientation="vertical">
+	<LinearLayout android:id="@+id/btn_bar"                         
+	         android:orientation="horizontal"                                
+	         android:gravity="bottom" 
+	         android:layout_alignParentBottom="true"  
+	         style="@style/BottomButtonBar"> 
+	                                         
+	     <Button android:id="@+id/btnCancel" 
+	             android:text="@string/button_cancel" 
+	             style="@style/LeftBottomButton"/> 
+	                                 
+	     <Button android:id="@+id/btnOK" 
+	             style="@style/RightBottomButton" 
+	             android:text="@string/button_ok"/> 
+	 
+	 </LinearLayout>
+	 <LinearLayout 
+	 	android:layout_width="fill_parent"
+	 	android:layout_height="fill_parent"
+	 	android:layout_above="@+id/btn_bar"
+	 	android:orientation="vertical"
+	 	>
+
+	 	<TextView
+	 	    style="@style/ButtonTitle"
+	 	    android:text="@string/txt_EditDay" >
+
+	 	</TextView>
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:background="@drawable/bg_cont1"
+			android:layout_width="match_parent"
+			android:layout_height="56dip"
+			android:orientation="horizontal"
+			android:gravity="center_vertical|center_horizontal"
+			>
+			<EditText
+				android:id="@+id/etYear"
+				android:layout_width="80dip"
+				android:layout_height="wrap_content"
+				android:longClickable="false"
+				android:numeric="integer"
+			/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="16sp"
+				android:textColor="@color/black"
+				android:text="@string/txt_Year"
+			/>
+			<EditText
+				android:id="@+id/etMonth"
+				android:layout_width="65dip"
+				android:layout_height="wrap_content"
+				android:longClickable="false"
+				android:numeric="integer"
+			/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="16sp"
+				android:textColor="@color/black"
+				android:text="@string/txt_Month"
+			/>
+			<EditText
+				android:id="@+id/etDay"
+				android:layout_width="65dip"
+				android:layout_height="wrap_content"
+				android:longClickable="false"
+				android:numeric="integer"
+			/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="16sp"
+				android:textColor="@color/black"
+				android:text="@string/txt_Day"
+			/>
+		</LinearLayout>
+			
+		<RadioGroup android:id="@+id/rgDayType"
+			android:orientation="horizontal"
+			android:background="@drawable/bg_cont2"
+			android:layout_width="match_parent"
+			android:layout_height="48dip"
+			android:paddingLeft="40dip"
+			android:paddingRight="35dip"
+		> 
+			<RadioButton 
+				android:id="@+id/rbSolar"
+				android:text="@string/txt_Solar"
+				style="@style/RadioButton"
+				/> 
+			<RadioButton
+				android:id="@+id/rbLunar"
+				android:text="@string/txt_Lunar"
+				style="@style/RadioButton"
+				/>
+			<RadioButton
+				android:id="@+id/rbLunarLeap"
+				android:text="@string/txt_LunarLeap"
+				style="@style/RadioButton"
+				/>
+			</RadioGroup>
+	</LinearLayout>
+</RelativeLayout>

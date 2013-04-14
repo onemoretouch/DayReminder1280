@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/rlDrItem"
+android:layout_width="fill_parent"
+android:layout_height="64dip"
+android:paddingTop="0dip"
+android:paddingBottom="1dip"
+android:background="@drawable/xml_bg_mainlistitem"
+android:gravity="bottom"
+android:layout_gravity="bottom"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+	<TextView
+		android:id="@+id/tvAftDays"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvDrDesp"
+		android:layout_alignParentRight="true"
+		android:textSize="13sp"
+		android:textStyle="bold"
+		android:paddingBottom="4dip"
+		android:paddingRight="16dip"
+	>
+	</TextView>
+	
+	<TextView
+		android:id="@+id/tvNextDate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvDrDesp"
+		android:layout_toRightOf="@+id/drIv"
+		android:textSize="13sp"
+		android:textColor="@color/black"
+		android:paddingLeft="20dip"
+	>
+	</TextView>
+	<TextView
+		android:id="@+id/tvDrDesp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tvDrName"
+		android:layout_toRightOf="@+id/drIv"
+		android:textColor="@color/gray1"
+		android:textSize="12sp"
+		android:paddingLeft="20dip"
+	>
+	</TextView>
+	<TextView
+		android:id="@+id/tvAgoDays"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="13sp"
+		android:paddingTop="5dip"
+		android:layout_marginRight="64dip"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:textColor="@color/gray1"
+	>
+	</TextView>
+	<CheckBox
+		android:id="@+id/cbSed"
+		android:layout_width="36dip"
+		android:layout_height="36dip"
+		android:text=""
+		android:layout_marginRight="0dip"
+		android:layout_marginTop="0dip"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		style="@style/CheckBoxCheck"
+	>
+	</CheckBox>
+	
+	
+	<TextView
+		android:id="@+id/tvDrName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingLeft="32dip"
+		android:paddingTop="5dip"
+		android:text=""
+		android:textSize="14sp"
+		android:textColor="@color/black"
+		android:textStyle="bold"
+		android:layout_alignParentTop="true"
+		android:layout_toRightOf="@+id/drIv"
+	>
+	</TextView>
+	<ImageView
+		android:id="@+id/drIv"
+		android:layout_width="64dip"
+		android:layout_height="64dip"
+		android:layout_margin="0dip"
+		android:paddingLeft="0dip"
+		android:paddingTop="2dip"
+		android:paddingRight="5dip"
+		android:paddingBottom="2dip"
+		android:background="@drawable/av_bg"
+		android:src="@drawable/defaulttx"	
+		android:gravity="center_horizontal|center_vertical"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+	>
+	</ImageView>
+</RelativeLayout>

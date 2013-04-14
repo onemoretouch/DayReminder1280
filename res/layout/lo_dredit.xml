@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/llDrEdit"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+android:background="@color/sysbg"
+>
+	<LinearLayout 
+	         android:id="@+id/edit_bar" 
+	         android:orientation="horizontal" 
+	         android:clickable="true" 
+	         style="@style/BottomButtonBar" 
+	         android:layout_alignParentBottom="true"> 
+	 
+	     <Button
+	         android:id="@+id/btnCancel"
+	         style="@style/LeftBottomButton"
+	         android:text="@string/button_cancel" />
+	                     
+	     <Button android:id="@+id/btnSave"
+	             style="@style/RightBottomButton"       
+	             android:text="@string/button_save"   /> 
+	 </LinearLayout>
+	 <ScrollView
+	    	android:id="@+id/sv"
+	    	android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_above="@+id/edit_bar"
+			android:fillViewport="true"
+	    	>
+		<LinearLayout
+			android:id="@+id/llContent"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical">
+			
+			<Button android:id="@+id/btnContacts"
+				style="@style/ButtonTitle_Allow"
+				>
+			</Button>
+			<RelativeLayout android:id="@+id/rlDrNamePhone"
+				style="@style/EditBgLarge"
+				>
+				<ImageView android:id="@+id/drIv"
+					android:layout_width="88dip"
+					android:layout_height="88dip"
+					android:layout_marginLeft="6dip"
+					android:layout_marginTop="3dip"
+					android:paddingLeft="0dip"
+				    android:paddingTop="0dip"
+				    android:paddingRight="2dip"
+				    android:paddingBottom="2dip"
+					android:background="@drawable/av_bg"
+					android:src="@drawable/defaulttx"	
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentTop="true">
+				</ImageView>
+				
+				<EditText android:id="@+id/etDrName"
+					android:layout_width="fill_parent"
+					android:layout_height="48dip"
+					android:paddingLeft="36dip"
+					android:background="@null"
+					android:hint="@string/txt_BdName"
+					android:layout_alignParentTop="true"
+					android:layout_toRightOf="@+id/drIv"
+				>
+				</EditText>
+				<EditText android:id="@+id/etTelPhone"
+					android:layout_width="fill_parent"
+					android:layout_height="48dip"
+					android:paddingLeft="36dip"
+					android:background="@null"
+					android:hint="@string/txt_Phone"
+					android:phoneNumber="true"
+					android:layout_alignParentBottom="true"
+					android:layout_toRightOf="@+id/drIv"
+				>
+				</EditText>
+			</RelativeLayout>
+			
+			
+			<Button android:id="@+id/btnDay"
+				android:text="@string/txt_MdDay"
+				style="@style/TextViewCont1RightAllow"
+				>
+			</Button>
+			<LinearLayout android:id="@+id/llRmDateType"
+				style="@style/TextViewCont1"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="horizontal">
+				<TextView 
+					android:id="@+id/tvRmDateType" 
+					android:layout_width="96dip"
+					android:layout_height="fill_parent" 
+					android:textColor="#ff000000"
+					android:textSize="16.0sp"
+					android:layout_gravity="left|center_vertical"
+					android:gravity="left|center_vertical"
+					android:text="@string/txt_RmDateType" />
+				<CheckBox android:id="@+id/cbSolar" 
+					android:text="@string/txt_Solar" 
+					style="@style/CheckBoxCheck"
+				/>
+				<CheckBox android:id="@+id/cbLunar" 
+					android:text="@string/txt_Lunar" 
+					style="@style/CheckBoxCheck"
+				/>
+				<CheckBox android:id="@+id/cbLunarLeap" 
+					android:text="@string/txt_LunarLeap" 
+					style="@style/CheckBoxCheck"
+				/>
+			</LinearLayout>
+			<Button android:id="@+id/btnNextDate"
+				style="@style/TextViewCont2RightAllow"
+				android:text="@string/txt_NextDate"
+			>
+			</Button>
+			
+			<CheckBox android:id="@+id/cbIsAppWidget"
+				style="@style/CheckBoxGroup"
+				android:text="@string/txt_IsAppWidget"
+			>
+			</CheckBox>
+			<Button android:id="@+id/btnApDays"
+				style="@style/TextViewCont2DownAllow"
+				android:text="@string/txt_AfDays"
+			>
+			</Button>
+			
+			<LinearLayout android:id="@+id/llRemindType"
+				style="@style/TextViewGroup"
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="horizontal">
+				<TextView 
+					android:id="@+id/tvRemindType" 
+					android:layout_width="96dip"
+					android:layout_height="fill_parent" 
+					android:textColor="#ff000000"
+					android:textSize="16.0sp"
+					android:layout_gravity="left|center_vertical"
+					android:gravity="left|center_vertical"
+					android:text="@string/txt_RemindType" />
+				<CheckBox android:id="@+id/cbAlarm" 
+					android:text="@string/txt_Alarm" 
+					style="@style/CheckBoxCheck"
+				/>
+				
+				<CheckBox android:id="@+id/cbNotify" 
+					android:text="@string/txt_Notify" 
+					style="@style/CheckBoxCheck"
+				/>
+			</LinearLayout>
+			<Button android:id="@+id/btnAfDays"
+				style="@style/TextViewCont1DownAllow"
+				android:text="@string/txt_AfDays"
+			>
+			</Button>
+			<Button android:id="@+id/btnRemindTime"
+				style="@style/TextViewCont2DownAllow"
+				android:text="@string/txt_RemindTime"
+			>
+			</Button>
+
+			<CheckBox android:id="@+id/cbIsAutoSMS"
+				style="@style/CheckBoxGroup"
+				android:text="@string/txt_IsAutoSMS"
+			>
+			</CheckBox>
+			<EditText android:id="@+id/etSMSText"
+				style="@style/EditBgSmall2"
+				android:enabled="false"
+				android:hint="@string/txt_SMSText"
+			>
+			</EditText>
+
+			<TextView android:id="@+id/tvRemark"
+				style="@style/TextViewGroup"
+				android:text="@string/txt_Remark"
+			>
+			</TextView>
+			<EditText android:id="@+id/etRemark"
+				style="@style/EditBgSmall2"
+				android:hint="@string/txt_RemarkText"
+			>
+			</EditText>
+			
+		</LinearLayout>
+   </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/itemholiday"
+android:layout_width="fill_parent"
+android:layout_height="48dip"
+android:background="@drawable/xml_bg_listitem"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+	<CheckBox
+		android:id="@+id/cbSed"
+		android:layout_width="wrap_content"
+		android:layout_height="48dip"
+		android:text=""
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+		android:clickable="false"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		style="@style/CheckBoxCheck"
+	>
+	</CheckBox>
+	<TextView
+		android:id="@+id/tvHDate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=""
+		android:textSize="13sp"
+		android:textColor="@color/black"
+		android:layout_below="@+id/tvHDesp"
+		android:layout_alignParentLeft="true"
+	>
+	</TextView>
+	<TextView
+		android:id="@+id/tvHDesp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=""
+		android:textSize="13sp"
+		android:layout_below="@+id/tvHName"
+		android:layout_alignParentLeft="true"
+	>
+	</TextView>
+	<TextView
+		android:id="@+id/tvHName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=""
+		android:textSize="15sp"
+		android:textColor="@color/tvc"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+	>
+	</TextView>
+</RelativeLayout>
+

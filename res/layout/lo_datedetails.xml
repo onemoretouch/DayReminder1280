@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/sysbg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView
+	   	android:id="@+id/tvTitle"
+	   	style="@style/ButtonTitle"
+	   	android:text="@string/txt_DateDetails"
+	   	android:layout_alignParentTop="true"
+	   	/>	
+	<LinearLayout android:id="@+id/llSolar"
+		style="@style/TextViewCont1"
+		android:layout_below="@+id/tvTitle"
+	>
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="2"
+			android:layout_gravity="center_horizontal|center_vertical"
+	   		android:gravity="center_vertical|center_horizontal"
+			android:text="@string/txt_Solar"
+			android:textColor="@color/black"
+			android:textSize="16sp"
+			>
+		</TextView>
+		<TextView android:id="@+id/tvSolarDay"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:layout_gravity="left|center_vertical"
+	   		android:gravity="center_vertical|left"
+			android:textColor="@color/black"
+			android:textSize="16sp"
+			>
+		</TextView>
+		<ImageView android:id="@+id/ivSolar"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="2"
+			>
+		</ImageView>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/llLunar"
+		style="@style/TextViewCont1"
+		android:layout_below="@+id/llSolar"
+	>
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="2"
+			android:layout_gravity="center_horizontal|center_vertical"
+	   		android:gravity="center_vertical|center_horizontal"
+			android:text="@string/txt_Lunar"
+			android:textColor="@color/black"
+			android:textSize="16sp"
+			>
+		</TextView>
+		<TextView android:id="@+id/tvLunarDay"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:layout_gravity="left|center_vertical"
+	   		android:gravity="center_vertical|left"
+			android:textColor="@color/black"
+			android:textSize="16sp"
+			>
+		</TextView>
+		<ImageView android:id="@+id/ivLunar"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="2"
+			>
+		</ImageView>
+	</LinearLayout>
+	
+	
+	<ListView	
+		android:id="@+id/lvDate"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:choiceMode="singleChoice"
+		android:background="@color/sysbg"
+		android:cacheColorHint="#00000000"
+		android:dividerHeight="0dip"
+		android:layout_below="@+id/llLunar"
+	/> 
+	<TextView  	android:id="@+id/tvBottom"
+	   	style="@style/TextViewCont2"
+	   	android:layout_below="@+id/lvDate"
+	 />
+</RelativeLayout>

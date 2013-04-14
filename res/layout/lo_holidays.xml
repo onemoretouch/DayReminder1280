@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/btn_sd_sed"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnLh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/btn_ld"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnWh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/btn_wd"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnSt"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/btn_td"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sblBottom"
+        style="@style/BottomButtonBar"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/LeftBottomButton"
+            android:text="@string/button_cancel" />
+
+        <Button
+            android:id="@+id/btnOK"
+            style="@style/RightBottomButton"
+            android:text="@string/button_ok" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvHolidays"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/sblBottom"
+        android:layout_below="@+id/llTop"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="0dip"
+        android:choiceMode="multipleChoice"
+         />
+
+</RelativeLayout>

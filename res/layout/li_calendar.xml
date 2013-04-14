@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/widget29"
+android:layout_width="45dip"
+android:layout_height="45dip"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+	
+	<TextView
+		android:id="@+id/tvMdInfo"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:text=""
+		android:textSize="10sp"
+		android:background="@drawable/xml_bg_cld"
+		android:gravity="center_horizontal|center_vertical"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+	>
+	</TextView>
+	<ImageView  
+		android:id="@+id/ivAllow"
+		android:layout_width="5dip"
+		android:layout_height="5dip"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+	>
+	</ImageView>
+</RelativeLayout>

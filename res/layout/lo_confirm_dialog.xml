@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dip"
+    android:layout_height="124dip"
+    android:layout_gravity="center_horizontal|center_vertical" >
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="250dip"
+        android:layout_height="78dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_dialog_text"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dip"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="16dip" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="250dip"
+        android:layout_height="46dip"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/dialog_message"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xml_btn_dialog_bottom_left"
+            android:text="@string/button_cancel"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/dialog_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/xml_btn_dialog_bottom_right"
+            android:text="@string/button_ok"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

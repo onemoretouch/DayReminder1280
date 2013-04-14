@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:key="sysSetting"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+  >
+	<CheckBoxPreference android:key="cbPwdProtect"
+		android:title="@string/ss_pwdProtect" 
+       	android:defaultValue="false" ></CheckBoxPreference>
+    
+    <Preference android:key="pfPwd"
+		android:title="@string/ss_SetPwd" 
+		android:widgetLayout="@layout/lo_rightallow"
+		android:dependency="cbPwdProtect" >
+	</Preference>
+		
+	<CheckBoxPreference android:key="cbIsRemind"
+		android:title="@string/ss_IsRemind" 
+       	android:defaultValue="true" />
+    
+    <ListPreference android:key="lpAfDays"
+		android:title="@string/ss_AfDays"
+		android:entries="@array/afdays"
+		android:entryValues="@array/afdays_value" 
+        android:dialogTitle="@string/ss_AfDays" 
+        android:dependency="cbIsRemind" android:defaultValue="1"/>
+       	
+	<Preference android:key="pfRemindTime"
+		android:title="@string/ss_RemindTime" 
+		android:widgetLayout="@layout/lo_downallow"
+		android:dependency="cbIsRemind" android:defaultValue="750">
+	</Preference>
+
+	<CheckBoxPreference android:key="cbIsNotify"
+		android:title="@string/ss_IsNotify" 
+       	android:defaultValue="true"
+       	android:dependency="cbIsRemind" />
+    
+     <CheckBoxPreference android:key="cbIsAlarm"
+		android:title="@string/ss_IsAlarm" 
+       	android:defaultValue="true" 
+       	android:dependency="cbIsRemind" />
+       	
+     <CheckBoxPreference android:key="cbIsVibrate"
+		android:title="@string/ss_IsVibrate" 
+       	android:defaultValue="true" 
+       	android:dependency="cbIsAlarm" />
+
+       	  	   	
+    <CheckBoxPreference android:key="cbIsBell"
+		android:title="@string/ss_IsBell" 
+       	android:defaultValue="true"
+       	android:dependency="cbIsAlarm" />
+       	
+    <Preference android:key="pfBell"
+    	android:title="@string/ss_Bell" 
+        android:widgetLayout="@layout/lo_rightallow"
+        android:dependency="cbIsBell" />
+	
+	<CheckBoxPreference android:key="cbIsAutoSMS"
+		android:title="@string/ss_IsAutoSMS" 
+       	android:defaultValue="true"
+       	android:dependency="cbIsRemind" />
+    
+    <CheckBoxPreference android:key="cbIsAppWidget"
+		android:title="@string/ss_IsAppWidget" 
+       	android:defaultValue="true"  />
+       	 
+    <ListPreference android:key="lpApDays"
+		android:title="@string/ss_ApDays"
+		android:entries="@array/afdays"
+		android:entryValues="@array/afdays_value" 
+        android:dialogTitle="@string/ss_AfDays" 
+        android:dependency="cbIsAppWidget" android:defaultValue="30"/>   	
+        
+	<Preference android:key="pfUpdateRemind"
+		android:title="@string/ss_UpdateRemind" 
+		android:summary="@string/ss_UpdateRemindDesp" >
+	</Preference>
+	
+	<Preference android:key="pfBackup"
+		android:title="@string/ss_Backup"
+		>
+	</Preference> 
+	
+	<Preference android:key="pfRestore"
+		android:title="@string/ss_Restore" 
+		android:widgetLayout="@layout/lo_rightallow"
+		android:summary="@string/ss_RestoreDesp" >
+	</Preference>
+	<!-- 
+	<Preference android:key="pfRestoreForM8"
+		android:title="@string/ss_RestoreForM8" 
+		android:widgetLayout="@layout/lo_rightallow"
+		android:summary="@string/ss_RestoreForM8Desp" >
+	</Preference>
+	 -->  
+</PreferenceScreen>

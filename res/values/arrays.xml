@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="afdays">			<!-- 声明一个字符串数组 -->
+     <item>提前0天</item>			<!-- 向数组中加入元素 -->
+     <item>提前1天</item>			<!-- 向数组中加入元素 -->
+     <item>提前2天</item>			<!-- 向数组中加入元素 -->
+     <item>提前3天</item>			<!-- 向数组中加入元素 -->
+     <item>提前4天</item>			<!-- 向数组中加入元素 -->
+     <item>提前5天</item>			<!-- 向数组中加入元素 -->
+     <item>提前6天</item>			<!-- 向数组中加入元素 -->
+     <item>提前7天</item>			<!-- 向数组中加入元素 -->
+     <item>提前8天</item>			<!-- 向数组中加入元素 -->
+     <item>提前9天</item>			<!-- 向数组中加入元素 -->
+     <item>提前10天</item>			<!-- 向数组中加入元素 -->
+     <item>提前15天</item>			<!-- 向数组中加入元素 -->
+     <item>提前30天</item>			<!-- 向数组中加入元素 -->
+     <item>提前60天</item>			<!-- 向数组中加入元素 -->
+  </string-array>
+  <string-array name="afdays_value">			<!-- 声明一个字符串数组 -->
+     <item>0</item>			<!-- 向数组中加入元素 -->
+     <item>1</item>			<!-- 向数组中加入元素 -->
+     <item>2</item>			<!-- 向数组中加入元素 -->
+     <item>3</item>			<!-- 向数组中加入元素 -->
+     <item>4</item>			<!-- 向数组中加入元素 -->
+     <item>5</item>			<!-- 向数组中加入元素 -->
+     <item>6</item>			<!-- 向数组中加入元素 -->
+     <item>7</item>			<!-- 向数组中加入元素 -->
+     <item>8</item>			<!-- 向数组中加入元素 -->
+     <item>9</item>			<!-- 向数组中加入元素 -->
+     <item>10</item>			<!-- 向数组中加入元素 -->
+     <item>15</item>			<!-- 向数组中加入元素 -->
+     <item>30</item>			<!-- 向数组中加入元素 -->
+     <item>60</item>			<!-- 向数组中加入元素 -->
+  </string-array>
+  <integer-array name="apdays_value">			<!-- 声明一个字符串数组 -->
+     <item>0</item>			<!-- 向数组中加入元素 -->
+     <item>1</item>			<!-- 向数组中加入元素 -->
+     <item>2</item>			<!-- 向数组中加入元素 -->
+     <item>3</item>			<!-- 向数组中加入元素 -->
+     <item>4</item>			<!-- 向数组中加入元素 -->
+     <item>5</item>			<!-- 向数组中加入元素 -->
+     <item>6</item>			<!-- 向数组中加入元素 -->
+     <item>7</item>			<!-- 向数组中加入元素 -->
+     <item>8</item>			<!-- 向数组中加入元素 -->
+     <item>9</item>			<!-- 向数组中加入元素 -->
+     <item>10</item>			<!-- 向数组中加入元素 -->
+     <item>15</item>			<!-- 向数组中加入元素 -->
+     <item>30</item>			<!-- 向数组中加入元素 -->
+     <item>60</item>			<!-- 向数组中加入元素 -->
+  </integer-array>
+</resources>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="perference_set_activity" parent="android:Theme.Light.Panel">
+        <item name="android:windowBackground">@color/syssetbg</item>
+        <item name="android:layout_height">32dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textColor">#ff000000</item> <!-- 字体颜色 -->
+        <item name="android:colorBackgroundCacheHint">#00000000</item> <!-- 背景缓存色透明，避免拖动全黑 -->
+    </style>
+
+    <style name="activityStyle" parent="android:Theme.Light.Panel">
+        <item name="android:windowBackground">@color/syssetbg</item>
+        <item name="android:layout_height">32dip</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textColor">#ff000000</item> <!-- 字体颜色 -->
+        <item name="android:colorBackgroundCacheHint">#00000000</item> <!-- 背景缓存色透明，避免拖动全黑 -->
+    </style>
+
+    <style name="CheckBoxSwitch" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/xml_bg_switch</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">56dip</item>
+        <item name="android:textColor">#ffffff</item> <!-- 字体颜色 -->
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingLeft">40dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:button">@drawable/xml_btn_switch</item>
+    </style>
+
+    <style name="CheckBoxCheck" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textColor">#000000</item> <!-- 字体颜色 -->
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:button">@drawable/xml_btn_check</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textColor">#000000</item> <!-- 字体颜色 -->
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:button">@drawable/xml_btn_check</item>
+    </style>
+
+    <style name="ButtonTitle_Allow">
+        <item name="android:background">@drawable/xml_bg_title_allow</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">56dip</item>
+        <item name="android:textColor">#ffffff</item> <!-- 字体颜色 -->
+        <item name="android:shadowRadius">0</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">40dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="ButtonTitle">
+        <item name="android:background">@drawable/xml_bg_title</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44dip</item>
+        <item name="android:textColor">#000000</item> <!-- 字体颜色 -->
+        <item name="android:textStyle">bold</item> 
+        <item name="android:paddingTop">14dip</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:paddingRight">24dip</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="GroupButton">
+        <item name="android:background">@drawable/xml_bg_mainbutton</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#000000</item> <!-- 字体颜色 -->
+        <item name="android:textStyle">bold</item> <!-- 字体颜色 -->
+        <item name="android:shadowRadius">0</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="EditBgLarge">
+        <item name="android:background">@drawable/bg_name_phone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">96dip</item>
+    </style>
+
+    <style name="EditBgSmall2">
+        <item name="android:background">@drawable/bg_cont2</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:padding">8dip</item>
+    </style>
+
+    <style name="EditBgSmall1">
+        <item name="android:background">@drawable/bg_cont1</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:padding">8dip</item>
+    </style>
+
+    <style name="TextViewSep">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">8dip</item>
+    </style>
+
+    <style name="TextViewCont1">
+        <item name="android:background">@drawable/xml_bg_cont1</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:textColor">#ff000000</item> <!-- 字体颜色 -->
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="TextViewGroup">
+        <item name="android:background">@drawable/xml_bg_group</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:textColor">#ff000000</item> <!-- 字体颜色 -->
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+    
+    <style name="CheckBoxCont1" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/xml_bg_cont1</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">55dip</item>
+        <item name="android:textColor">#000000</item> <!-- 字体颜色 -->
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:button">@drawable/xml_btn_switch</item>
+    </style>
+
+    <style name="CheckBoxGroup" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/xml_bg_group</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:textColor">#000000</item> <!-- 字体颜色 -->
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:button">@drawable/xml_btn_switch</item>
+    </style>
+    
+    <style name="TextViewCont1RightAllow">
+        <item name="android:background">@drawable/xml_bg_cont1_rightallow</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:textColor">#ff000000</item> <!-- 字体颜色 -->
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    
+    <style name="TextViewCont1DownAllow">
+        <item name="android:background">@drawable/xml_bg_cont1_downallow</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:textColor">#ff000000</item> <!-- 字体颜色 -->
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="TextViewCont2">
+        <item name="android:background">@drawable/xml_bg_cont2</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:textColor">#ff000000</item> <!-- 字体颜色 -->
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="TextViewCont2RightAllow">
+        <item name="android:background">@drawable/xml_bg_cont2_rightallow</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:textColor">#ff000000</item> <!-- 字体颜色 -->
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="TextViewCont2DownAllow">
+        <item name="android:background">@drawable/xml_bg_cont2_downallow</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:textColor">#ff000000</item> <!-- 字体颜色 -->
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="Button_AhTop">
+        <item name="android:background">@drawable/xml_btn_top</item>
+        <item name="android:layout_width">100dip</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:textColor">#ffffff</item> <!-- 字体颜色 -->
+        <item name="android:shadowRadius">0</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="BottomButtonBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+    <style name="LeftBottomButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/xml_btn_bottom_left</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:paddingRight">30dip</item>
+        <item name="android:paddingLeft">73dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        
+    </style>
+
+    <style name="RightBottomButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/xml_btn_bottom_right</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:paddingRight">73dip</item>
+        <item name="android:paddingLeft">30dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+ 
+  
+    <style name="Transparent">
+	　　<item name="android:windowBackground">@color/transparent</item>
+	　　<item name="android:windowIsTranslucent">true</item>
+	　　<item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+　　</style>
+  
+
+    
+</resources>
